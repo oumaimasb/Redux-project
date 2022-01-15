@@ -1,11 +1,15 @@
 import React from "react";
 import "../Styles/Menu.css";
+import { menuItemsData } from "./Data";
+import MenuItem from "./MenuItem";
 
 const Menu = () => {
   return (
-    <div>
-      <h1>Menu</h1>
-    </div>
+    <main>
+      {menuItemsData.map((item) => (
+        <MenuItem key={item.id} item={item} />
+      ))}
+    </main>
   );
 };
 

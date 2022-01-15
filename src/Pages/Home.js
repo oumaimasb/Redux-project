@@ -5,7 +5,7 @@ import Menu from "../Compenents/Menu";
 import Footer from "../Compenents/Footer";
 import CartCount from "../Compenents/CartCount";
 
-function Home() {
+const Home = () => {
   return (
     <div>
       <Banner />
@@ -14,6 +14,6 @@ function Home() {
       <CartCount />
     </div>
   );
-}
+};
 
 export default Home;
