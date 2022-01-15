@@ -5,7 +5,7 @@ import ButtonAddRemoveItem from "./ButtonAddRemoveItem";
 const MenuItem = ({ item }) => {
   const { id, name, info, price, img } = item;
   return (
-    <div className="item">
+    <div className="item" key={id}>
       <img src={img} alt="item" />
       <div className="item-head-desc">
         <p className="head-desc-name">{name}</p>
